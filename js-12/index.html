@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .none {
+      display: none;
+    }
+    .replace-title{
+      position: relative;
+      left: 200px;
+    }
+    body {
+      background-color: rgb(169, 169, 235);
+    }
+    button {
+      max-width: 60px;
+      min-height: 40px;
+      border: none;
+      background-color: rgb(169, 169, 235);
+      font-size: 20px;
+    }
+
+    img {
+      max-width: 20px;
+      min-height: 20px;
+    }
+    .title{
+      color: white;
+      max-width: 30ww;
+    }
+    .modal {
+      padding: 10px;
+      background-color: white;
+      max-width: 30vw;
+      min-height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 60px;
+    }
+    .input-search {
+      max-width: inherit;
+      border: none;
+      margin-bottom: 20px;
+      outline: none;
+    }
+    .menu-link {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-link-item {
+      min-height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(25, 25, 35);
+    }
+    /* .menu{
+        display: none;
+    } */
+  </style>
+  <body>
+    <div class="main-part">
+      <button class="button-first">
+        <img src="./img/Hamburger_icon.svg.png" alt="" />
+      </button>
+      <button class="button-second none">X</button>
+    </div>
+    <div class="title">
+      <h1>Заголовок страницы</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ab.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit
+        eos sapiente nostrum eaque dolor qui harum iusto eligendi enim voluptate
+        incidunt et eveniet, perspiciatis officia dolorum repellendus. Ipsa,
+        necessitatibus.
+      </p>
+    </div>
+    <div class="none" id="burger-menu">
+      <div class="modal">
+        <input type="text" placeholder="Поиск" class="input-search" />
+        <div class="menu-link">
+          <div class="menu-link-item">
+            <a href="#">Новости</a>
+            <a href="#">Вакансии</a>
+            <a href="#">События</a>
+          </div>
+          <div class="menu-link-item">
+            <a href="#">Зарплаты</a>
+            <a href="#">Компании</a>
+            <a href="#">Обучнеи</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
